@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.main.ProfileMenuController">
+
+    <VBox layoutX="30" layoutY="30" spacing="15">
+        <HBox spacing="15">
+            <Label alignment="CENTER_RIGHT" minHeight="24" minWidth="95" text="Username"/>
+            <TextField fx:id="username" alignment="CENTER" maxWidth="170"/>
+        </HBox>
+        <HBox spacing="15">
+            <Label alignment="CENTER_RIGHT" minHeight="24" minWidth="95" text="Old password"/>
+            <PasswordField fx:id="oldPassword" alignment="CENTER" maxWidth="170"/>
+        </HBox>
+        <HBox spacing="15">
+            <Label alignment="CENTER_RIGHT" minHeight="24" minWidth="95" text="New password"/>
+            <VBox>
+                <PasswordField fx:id="newPassword" alignment="CENTER" maxWidth="170"/>
+                <Label text="Leave it blank if you don't want to change the password">
+                    <font>
+                        <Font size="7.5"/>
+                    </font>
+                </Label>
+            </VBox>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label alignment="CENTER_RIGHT" minHeight="24" minWidth="95" text="Confirm new&#13;   password"/>
+            <PasswordField fx:id="confirmNewPassword" alignment="CENTER" maxWidth="170"/>
+        </HBox>
+    </VBox>
+    <VBox layoutX="470" layoutY="42.5">
+        <ImageView fx:id="avatar" fitHeight="120" fitWidth="90"/>
+        <Hyperlink onAction="#updateAvatar" text="Click to change">
+            <font>
+                <Font size="7.5"/>
+            </font>
+        </Hyperlink>
+    </VBox>
+    <Button onAction="#deleteAccount" layoutX="87" layoutY="250" text="Delete Account">
+        <font>
+            <Font size="10.0"/>
+        </font>
+    </Button>
+    <HBox layoutX="180" layoutY="330" spacing="20">
+        <Button minWidth="110" onAction="#back" text="Back"/>
+        <Button minWidth="110" onAction="#saveChanges" text="Save changes"/>
+    </HBox>
+</AnchorPane>

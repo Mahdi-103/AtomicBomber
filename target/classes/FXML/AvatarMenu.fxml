@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.main.AvatarMenuController">
+    <ImageView fx:id="imageView1" fitHeight="120" fitWidth="90" layoutX="100" layoutY="50" onMouseClicked="#setAvatar">
+        <Image url="@../images/avatars/defaults/1.jpeg" />
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="imageView2" fitHeight="120" fitWidth="90" layoutX="410" layoutY="50" onMouseClicked="#setAvatar">
+        <Image url="@../images/avatars/defaults/2.jpeg" />
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="imageView3" fitHeight="120" fitWidth="90" layoutX="100" layoutY="200" onMouseClicked="#setAvatar">
+        <Image url="@../images/avatars/defaults/3.jpeg" />
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="imageView4" fitHeight="120" fitWidth="90" layoutX="410" layoutY="200" onMouseClicked="#setAvatar">
+        <Image url="@../images/avatars/defaults/4.jpeg" />
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <VBox layoutX="255" layoutY="140" alignment="CENTER">
+        <ImageView fx:id="choice" fitHeight="120" fitWidth="90" onDragDropped="#drag"/>
+        <Hyperlink onAction="#chooseFile" text="Click to browse" alignment="CENTER">
+         <font>
+            <Font size="7.5" />
+         </font></Hyperlink>
+    </VBox>
+    <HBox layoutX="245" layoutY="340" spacing="10">
+        <Button minWidth="50" onAction="#back" text="Back" />
+        <Button minWidth="50" onAction="#save" text="OK" />
+    </HBox>
+</AnchorPane>

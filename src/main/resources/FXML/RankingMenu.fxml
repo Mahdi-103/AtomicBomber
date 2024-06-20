@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.main.RankingMenuController">
+    <VBox fx:id="list" layoutX="100" layoutY="20">
+        <HBox>
+            <Label minWidth="80" alignment="CENTER" text="Username"/>
+            <Label minWidth="80" alignment="CENTER" text="Kills"/>
+            <Label minWidth="80" alignment="CENTER" text="Difficulty"/>
+            <Label minWidth="80" alignment="CENTER" text="Accuracy"/>
+            <Label minWidth="80" alignment="CENTER" text="Last Wave"/>
+        </HBox>
+    </VBox>
+    <HBox layoutX="155" layoutY="345" spacing="10">
+        <RadioButton fx:id="killSorter" minWidth="90" text="Kills"/>
+        <RadioButton fx:id="difficultySorter" minWidth="90" text="Difficulty"/>
+        <RadioButton fx:id="accuracySorter" minWidth="90" text="Accuracy"/>
+    </HBox>
+    <Button layoutX="275" layoutY="370" text="Back" onAction="#back"/>
+</AnchorPane>

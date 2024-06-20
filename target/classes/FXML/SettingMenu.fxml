@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.main.SettingMenuController"
+      prefHeight="400.0" prefWidth="600.0">
+    <VBox layoutX="220" layoutY="100" spacing="15">
+        <HBox alignment="CENTER" spacing="10">
+            <Label minWidth="75" maxWidth="75" text="Difficulty : "/>
+
+            <ChoiceBox fx:id="difficulty" minWidth="75" maxWidth="75">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Easy"/>
+                        <String fx:value="Medium"/>
+                        <String fx:value="Hard"/>
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+        </HBox>
+        <HBox minWidth="160" maxWidth="160" spacing="10" alignment="CENTER">
+            <Label text="Volume"/>
+            <Slider minWidth="100" maxWidth="100"/>
+        </HBox>
+        <Button minWidth="160" maxWidth="160" fx:id="color" onAction="#changeColor"/>
+        <Button minWidth="160" maxWidth="160" fx:id="controlKeys" onAction="#changeControlKeys"/>
+        <Button minWidth="160" maxWidth="160" text="Back" onAction="#back"/>
+    </VBox>
+</Pane>

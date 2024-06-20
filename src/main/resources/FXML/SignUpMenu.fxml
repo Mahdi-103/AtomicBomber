@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="15" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.signing.SignUpMenuController">
+    <TextField fx:id="username" alignment="CENTER" maxWidth="180" promptText="username" />
+    <PasswordField fx:id="password" alignment="CENTER" maxWidth="180" promptText="password" />
+    <PasswordField fx:id="passwordConfirm" alignment="CENTER" maxWidth="180" promptText="password confirm" />
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#back" prefWidth="85" text="Back" />
+        <Button onAction="#register" prefWidth="85" text="Register" />
+    </HBox>
+
+</VBox>

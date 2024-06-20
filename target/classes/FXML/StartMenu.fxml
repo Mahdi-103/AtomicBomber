@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StartMenuController">
+
+    <VBox layoutX="220" layoutY="250" spacing="15">
+        <Button minWidth="160" onAction="#signUp" text="Sign up" />
+        <Button minWidth="160" onAction="#signIn" text="Sign in" />
+        <Button minWidth="160" onAction="#enterGuest" text="Enter as guest" />
+    </VBox>
+</BorderPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PauseMenuController">
+    <VBox layoutX="420" layoutY="250" spacing="15">
+        <Button minWidth="160" onAction="#resume" text="Resume" />
+        <HBox minWidth="160" maxWidth="160" spacing="10" alignment="CENTER">
+            <Label text="Volume"/>
+            <Slider minWidth="100" maxWidth="100"/>
+        </HBox>
+        <Button minWidth="160" text="Help" onAction="#help"/>
+        <Button fx:id="saver" minWidth="160" onAction="#save" text="Save &amp; Exit" />
+        <Button minWidth="160" onAction="#exit" text="Exit" />
+    </VBox>
+</Pane>

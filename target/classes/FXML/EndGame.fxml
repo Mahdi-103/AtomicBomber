@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.EndGameMenuController"
+            prefHeight="600.0" prefWidth="1000.0">
+    <VBox layoutX="420" layoutY="225" alignment="CENTER" spacing="15">
+        <Label alignment="CENTER" minWidth="160" maxWidth="160" fx:id="status"/>
+        <HBox alignment="CENTER">
+            <Label minWidth="72.5" maxWidth="72.5" alignment="CENTER_RIGHT" text="Last Wave"/>
+            <Label minWidth="15" maxWidth="15" alignment="CENTER" text=" : "/>
+            <Label minWidth="72.5" maxWidth="72.5" fx:id="wave"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Label minWidth="72.5" maxWidth="72.5" alignment="CENTER_RIGHT" text="Kills"/>
+            <Label minWidth="15" maxWidth="15" alignment="CENTER" text=" : "/>
+            <Label minWidth="72.5" maxWidth="72.5" fx:id="kills" text="0"/>
+        </HBox>
+        <HBox>
+            <Label minWidth="72.5" maxWidth="72.5" alignment="CENTER_RIGHT" text="Accuracy"/>
+            <Label minWidth="15" maxWidth="15" alignment="CENTER" text=" : "/>
+            <Label minWidth="72.5" alignment="CENTER" fx:id="accuracy" text="0%"/>
+        </HBox>
+        <Button minWidth="50" text="OK" onAction="#back"/>
+    </VBox>
+</AnchorPane>
